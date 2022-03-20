@@ -1,0 +1,33 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+
+public class Notlar{
+public int Not1{get; set;}
+<#for(int i=1;i<101;i++){#>
+	public int Not<#=i#> { get; set; }
+	<#} #>
+}
+
+
+<#string[] ogrenci={"Id","Ad","Soyad"}; #>
+public class Ogrenci
+{
+<#foreach(var item in ogrenci)
+{#>
+public string <#=item#>{get;set;}
+<#} #>
+}
+
+
+<#string[] ogrenci1=System.IO.File.ReadAllLines("C://Users/Berkt/source/repos/ogrenci.txt");#>
+public class Ogrenci1
+{
+<#foreach(var item in ogrenci1)
+{#>
+public string <#=item#>{get;set;}
+<#} #>
+}

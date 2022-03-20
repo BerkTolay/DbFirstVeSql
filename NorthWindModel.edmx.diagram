@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b77f2ca6a9a24c3bbf4c9f0538e5143c" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="NorthwindModel.Kategoriler" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Urunler" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="NorthwindModel.FK_Urunler_Kategoriler" />
+        <EntityTypeShape EntityType="NorthwindModel.Tedarikciler" Width="1.5" PointX="5.625" PointY="3.375" />
+        <AssociationConnector Association="NorthwindModel.FK_Urunler_Tedarikciler" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
